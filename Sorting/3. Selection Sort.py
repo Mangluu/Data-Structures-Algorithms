@@ -1,4 +1,4 @@
-def selectio_sort(arr):
+def selection_sort(arr):
     for i in range(len(arr)):
         print(arr)
         for j in range(i, len(arr)):
@@ -7,4 +7,4 @@ def selectio_sort(arr):
 
 
 l = [6, 8, 1, 4, 10, 7, 8, 9, 3, 2, 5]
-selectio_sort(l)
+selection_sort(l)
