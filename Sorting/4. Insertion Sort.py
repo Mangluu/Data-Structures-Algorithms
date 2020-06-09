@@ -1,12 +1,11 @@
 def insertion_sort(arr):
-    for i in range(1, len(arr)):
-        print(arr)
-        for j in range(i,0,-1):
-            if arr[j] < arr[j - 1]:
-                arr[j], arr[j - 1] = arr[j - 1], arr[j]
+    for key in range(1, len(arr)):
+        if arr[key] < arr[key-1]:
+            j = key
+            while j > 0 and arr[j] < arr[j-1]:
+                arr[j], arr[j-1] = arr[j-1], arr[j]
+                j -= 1
 
-    print(arr)
-    return
-
-l = [6, 1, 8, 4, 10]
+l = [6, 8, 1, 4, 10, 7, 8, 9, 3, 2, 5]
 insertion_sort(l)
+print(l)
